@@ -1,5 +1,5 @@
 {
-  "name": "labecommerce-backend",
+  "name": "deploy-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,20 +12,21 @@
     "typescript": "^5.0.2"
   },
   "scripts": {
-    "start": "tsc && node ./build/endpoints/index.js",
-    "dev": "ts-node-dev src/app.ts"
-  },
+		"start": "node ./build/index.js",
+		"build": "tsc",
+		"dev": "ts-node-dev ./src/index.ts"
+},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HenriqBatista/labecommerce-backend.git"
+    "url":  "git+https://github.com/HenriqBatista/deploy-exercicios.git"
   },
   "keywords": [],
   "author": "Henrique-Batista",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HenriqBatista/labecommerce-backend/issues"
+    "url": "https://github.com/HenriqBatista/deploy-exercicios/issues"
   },
-  "homepage": "https://github.com/HenriqBatista/labecommerce-backend#readme",
+  "homepage": "https://github.com/HenriqBatista/deploy-exercicios-readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
